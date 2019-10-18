@@ -24,7 +24,7 @@ import java.io.IOException;
 
 public class TestNgTest {
 
-    public static WebDriver driver;
+    private static WebDriver driver;
 
     @BeforeClass
     public void setDriver() throws InterruptedException{
@@ -37,7 +37,7 @@ public class TestNgTest {
     }
 
 
-    public Object[][] excelReader(String filePath) throws IOException {
+    private Object[][] excelReader(String filePath) throws IOException {
 
         File file = new File(filePath);
         FileInputStream fileInputStream = new FileInputStream(file);
@@ -86,7 +86,7 @@ public class TestNgTest {
         Thread.sleep(1000);
 
         Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"bt\"]/div[3]/div[1]/div[2]/p/span")).getText(),bmiValue);
-        Thread.sleep(2000);
+        Thread.sleep(1000);
     }
 
     //测试方法的数据源
