@@ -49,13 +49,11 @@ public class CucumberTest {
 
     @After
     public void embedScreenshot(Scenario scenario) {
-        if(scenario.isFailed()){
-            try {
-                byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-                scenario.embed(screenshot, "image/png");
-            } catch (WebDriverException somePlatformsDontSupportScreenshots) {
-                System.err.println(somePlatformsDontSupportScreenshots.getMessage());
-            }
+        if (scenario.isFailed()) {
+            // Take a screenshot...
+            final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            // ... and embed it in the report.
+            scenario.embed(screenshot, "image/png");
         }
     }
 
