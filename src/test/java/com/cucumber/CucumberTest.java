@@ -1,11 +1,12 @@
 package com.cucumber;
 
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
@@ -44,6 +45,18 @@ public class CucumberTest {
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         Thread.sleep(2000);
+    }
+
+    @After
+    public void embedScreenshot(Scenario scenario) {
+        if(scenario.isFailed()){
+            try {
+                byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                scenario.embed(screenshot, "image/png");
+            } catch (WebDriverException somePlatformsDontSupportScreenshots) {
+                System.err.println(somePlatformsDontSupportScreenshots.getMessage());
+            }
+        }
     }
 
 
