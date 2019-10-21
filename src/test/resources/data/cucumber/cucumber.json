@@ -1,0 +1,586 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 17195624100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am at \"http://cn.onlinebmicalculator.com/\" #BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://cn.onlinebmicalculator.com/",
+                  "offset": 9
+                }
+              ],
+              "location": "CucumberTest.iAmAtBMI(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "BMI Test",
+        "description": "",
+        "id": "bmi-#bmi;bmi-test;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000411200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am in \"http://cn.onlinebmicalculator.com/\" page#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://cn.onlinebmicalculator.com/",
+                  "offset": 9
+                }
+              ],
+              "location": "CucumberTest.iAmInPageBMI(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1124470200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I key in \"180\" height#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "180",
+                  "offset": 10
+                }
+              ],
+              "location": "CucumberTest.iKeyInHeightBMI(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1105488500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I key in \"60\" weight#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 10
+                }
+              ],
+              "location": "CucumberTest.iKeyInWeightBMI(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7025892400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click \"计算BMI\" button#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "计算BMI",
+                  "offset": 9
+                }
+              ],
+              "location": "CucumberTest.iClickButtonBMI(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2036626700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The value of BMI should be equals \"18.5\"#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "18.5",
+                  "offset": 35
+                }
+              ],
+              "location": "CucumberTest.theValueOfBMIShouldBeEqualsBMI(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@BMI"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6181224200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am at \"http://cn.onlinebmicalculator.com/\" #BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://cn.onlinebmicalculator.com/",
+                  "offset": 9
+                }
+              ],
+              "location": "CucumberTest.iAmAtBMI(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "BMI Test",
+        "description": "",
+        "id": "bmi-#bmi;bmi-test;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000038300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am in \"http://cn.onlinebmicalculator.com/\" page#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://cn.onlinebmicalculator.com/",
+                  "offset": 9
+                }
+              ],
+              "location": "CucumberTest.iAmInPageBMI(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1144702100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I key in \"180\" height#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "180",
+                  "offset": 10
+                }
+              ],
+              "location": "CucumberTest.iKeyInHeightBMI(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1136058400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I key in \"70\" weight#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "70",
+                  "offset": 10
+                }
+              ],
+              "location": "CucumberTest.iKeyInWeightBMI(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2365324200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click \"计算BMI\" button#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "计算BMI",
+                  "offset": 9
+                }
+              ],
+              "location": "CucumberTest.iClickButtonBMI(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2035425700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The value of BMI should be equals \"21.6\"#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "21.6",
+                  "offset": 35
+                }
+              ],
+              "location": "CucumberTest.theValueOfBMIShouldBeEqualsBMI(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@BMI"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4385011100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am at \"http://cn.onlinebmicalculator.com/\" #BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://cn.onlinebmicalculator.com/",
+                  "offset": 9
+                }
+              ],
+              "location": "CucumberTest.iAmAtBMI(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "BMI Test",
+        "description": "",
+        "id": "bmi-#bmi;bmi-test;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 999335700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am in \"http://cn.onlinebmicalculator.com/\" page#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://cn.onlinebmicalculator.com/",
+                  "offset": 9
+                }
+              ],
+              "location": "CucumberTest.iAmInPageBMI(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1108899700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I key in \"170\" height#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "170",
+                  "offset": 10
+                }
+              ],
+              "location": "CucumberTest.iKeyInHeightBMI(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1117350900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I key in \"65\" weight#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "65",
+                  "offset": 10
+                }
+              ],
+              "location": "CucumberTest.iKeyInWeightBMI(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22783992000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click \"计算BMI\" button#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "计算BMI",
+                  "offset": 9
+                }
+              ],
+              "location": "CucumberTest.iClickButtonBMI(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2073305800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The value of BMI should be equals \"22.5\"#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "22.5",
+                  "offset": 35
+                }
+              ],
+              "location": "CucumberTest.theValueOfBMIShouldBeEqualsBMI(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@BMI"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 26773964200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am at \"http://cn.onlinebmicalculator.com/\" #BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://cn.onlinebmicalculator.com/",
+                  "offset": 9
+                }
+              ],
+              "location": "CucumberTest.iAmAtBMI(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "BMI Test",
+        "description": "",
+        "id": "bmi-#bmi;bmi-test;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000505900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am in \"http://cn.onlinebmicalculator.com/\" page#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://cn.onlinebmicalculator.com/",
+                  "offset": 9
+                }
+              ],
+              "location": "CucumberTest.iAmInPageBMI(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1105720400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I key in \"160\" height#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "160",
+                  "offset": 10
+                }
+              ],
+              "location": "CucumberTest.iKeyInHeightBMI(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1090940500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I key in \"50\" weight#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50",
+                  "offset": 10
+                }
+              ],
+              "location": "CucumberTest.iKeyInWeightBMI(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8238500000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click \"计算BMI\" button#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "计算BMI",
+                  "offset": 9
+                }
+              ],
+              "location": "CucumberTest.iClickButtonBMI(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2032874800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The value of BMI should be equals \"19.5\"#BMI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "19.5",
+                  "offset": 35
+                }
+              ],
+              "location": "CucumberTest.theValueOfBMIShouldBeEqualsBMI(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@BMI"
+          }
+        ]
+      }
+    ],
+    "name": "BMI #BMI",
+    "description": "",
+    "id": "bmi-#bmi",
+    "keyword": "Feature",
+    "uri": "BMI.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@BMI"
+      }
+    ]
+  }
+]
