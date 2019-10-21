@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/test/resources/feature/"},
-        format = {"pretty", "html:target/cucumber", "json:target/cucumber.json"},
+        format = {"pretty", "html:src/test/resources/data/cucumber", "json:src/test/resources/data/cucumber/cucumber.json"},
         glue = {"com.cucumber"}
 )
 
