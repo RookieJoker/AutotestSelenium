@@ -43,7 +43,7 @@ public class CucumberTest {
         System.setProperty("Webdriver.chrome.driver", "src/main/resources/driver/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().deleteAllCookies();
+//        driver.manage().deleteAllCookies();
         Thread.sleep(2000);
     }
 
