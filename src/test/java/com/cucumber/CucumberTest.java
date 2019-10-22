@@ -20,7 +20,7 @@ public class CucumberTest {
 
     private static WebDriver driver;
 
-    public static boolean isFailed = false;
+
     private static final Thread CLOSE_THREAD = new Thread() {
         /** If this program is started by executing junit class, the value of directory should be null.
          * When the program is started by executing junit class, whether the execution succeeds or fails,
@@ -28,13 +28,7 @@ public class CucumberTest {
          * if the execution fails, the browser will not be closed in the end.
          */
         @Override
-        public void run() {
-            String directory = System.getProperty("org.jetbrains.run.directory");
-            System.out.println("directory: " + directory);
-            if(directory == null || !isFailed){
-                driver.quit();
-            }
-        }
+        public void run() {driver.quit();}
     };
 
     public void setDriver () throws Throwable{
@@ -43,17 +37,19 @@ public class CucumberTest {
         System.setProperty("Webdriver.chrome.driver", "src/main/resources/driver/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-//        driver.manage().deleteAllCookies();
+        driver.manage().deleteAllCookies();
         Thread.sleep(2000);
     }
 
     @After
     public void embedScreenshot(Scenario scenario) {
-        if (scenario.isFailed()) {
-            // Take a screenshot...
-            final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-            // ... and embed it in the report.
-            scenario.embed(screenshot, "image/png");
+        if(scenario.isFailed()){
+            try {
+                byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                scenario.embed(screenshot, "/image/png");
+            } catch (WebDriverException somePlatformsDontSupportScreenshots) {
+                System.err.println(somePlatformsDontSupportScreenshots.getMessage());
+            }
         }
     }
 
